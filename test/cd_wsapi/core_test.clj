@@ -2,5 +2,5 @@
   (:use [cd-wsapi.core] :reload-all)
   (:use [clojure.test]))
 
-(deftest replace-me ;; FIXME: write
+#_ (deftest  ;; FIXME: write
   (is false "No tests have been written."))
