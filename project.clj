@@ -6,4 +6,8 @@
 		 [aleph "0.1.0-SNAPSHOT"]
 		 [net.cgrand/moustache "1.0.0-SNAPSHOT"]
 		 [org.danlarkin/clojure-json "1.1"]]
-  :dev-dependencies [[leiningen/lein-swank "1.2.0-SNAPSHOT"]])
+  :dev-dependencies [[leiningen/lein-swank "1.2.0-SNAPSHOT"]
+		     [leiningen-init-script "1.2.0-SNAPSHOT"]]
+  :lis-opts {:properties {:config-clj.env "prod"}
+	     :redirect-output-to "/var/log/cd-wsapi.log"}
+  :main main)
